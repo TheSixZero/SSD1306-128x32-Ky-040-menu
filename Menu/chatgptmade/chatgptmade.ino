@@ -151,8 +151,8 @@ void setup() {
   attachInterrupt(digitalPinToInterrupt(ENCODER_CLK), updateEncoder, CHANGE);
 
   newValue[0] = EEPROM.read(0);
-  newValue[1] = EEPROM.read(1);
-  newValue[2] = EEPROM.read(2);
+  newValue[1] = EEPROM.read(2);
+  newValue[2] = EEPROM.read(4);
 
   delay(200);
   Menu();
